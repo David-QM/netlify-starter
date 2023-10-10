@@ -3,7 +3,7 @@ process.env.DETA_RUNTIME = 'true';
 const http = require('http');
 const Waline = require('@waline/vercel');
 const serverless = require('serverless-http');
-const postUrl = {site.postUrl}.split('#')[0];
+const postUrl = {{site.postUrl}}.split('#')[0];
 
 const app = Waline({
   async postSave(comment) {
