@@ -22,12 +22,12 @@ const app = Waline({
         </div>
     </div>
 
-    // <script>
-    //     var link = document.getElementById("myLink");
-    //     var newHref = link.href.split('#')[0]; // 移除#符号之后的内容
-    //     link.href = newHref;
-    // </script>
- </body>,
+    <script>
+        var link = document.getElementById("myLink");
+        var newHref = link.href.split('#')[0]; // 移除#符号之后的内容
+        link.href = newHref;
+    </script>
+ </body>',
     mailSubject: '{{parent.nick}}，您在『{{site.name}}』上发表的评论收到了来自 {{self.nick}} 的回复',
     mailTemplate: `<div style="border-radius: 10px 10px 10px 10px;font-size:14px;color: #555555;width: 530px;font-family:'Century Gothic','Trebuchet MS','Hiragino Sans GB',微软雅黑,'Microsoft Yahei',Tahoma,Helvetica,Arial,'SimSun',sans-serif;margin:50px auto;max-width:100%;background: ##ffffff;">
     <div style="width:100%;background:#f8d1ce;color:#9d2850;background-image: -moz-linear-gradient(0deg, rgb(67, 198, 184), rgb(255, 209, 244));height: 66px;background: url(https://tva2.sinaimg.cn/large/c56b8822ly1h61tb7tagcj20ii01u3yc.jpg) left top no-repeat;display: flex;justify-content: center;flex-direction: column;">
