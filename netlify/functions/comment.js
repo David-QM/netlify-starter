@@ -17,7 +17,7 @@ const app = Waline({
     <div class="formmain" style="background:#fff;width:100%;max-width:800px;margin:auto auto;overflow:hidden;margin-bottom: -155px;">
         <p><strong>{{self.nick}}</strong> 回复说：</p>
         <div style="background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:15px;color:#555555;"><p>{{self.comment | safe}}</div>
-        <p style="text-align:center;position: relative;z-index: 99;">您可以点击<a id= "myLink" style="text-decoration:none;color:#cf5c83" href="{{site.postUrl}}" target="_blank">查看回复的完整內容</a></p>
+        <p style="text-align:center;position: relative;z-index: 99;">您可以点击<a id= "myLink" style="text-decoration:none;color:#cf5c83" href="{{self.url}}" target="_blank">查看回复的完整內容</a></p>
     </div>
 </div>
 
@@ -38,7 +38,7 @@ const app = Waline({
 			<div style="background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:15px;color:#555555;">{{parent.comment | safe}}</div>
 			<p><strong>{{self.nick}}</strong> 给您的回复如下：</p>
 			<div style="background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:15px;color:#555555;">{{self.comment | safe}}</div>
-			<p>您可以点击<a style="text-decoration:none; color:#cf5c83" href="{{site.postUrl}}" target="_blank"> 查看回复的完整內容 </a>，欢迎再次光临<a style="text-decoration:none; color:#cf5c83" href="{{site.url}}" target="_blank"> {{site.name}} </a>。</br><b>若访问不畅，可将网址中的"github.io"替换为"netlify.app"。</b><hr />
+			<p>您可以点击<a style="text-decoration:none; color:#cf5c83" href="{{self.url}}" target="_blank"> 查看回复的完整內容 </a>，欢迎再次光临<a style="text-decoration:none; color:#cf5c83" href="{{site.url}}" target="_blank"> {{site.name}} </a>。</br><b>若访问不畅，可将网址中的"github.io"替换为"netlify.app"。</b><hr />
 			<p style="font-size:14px;color:#b7adad;text-align:center;position: relative;z-index: 99;">本邮件为系统自动发送，请勿直接回复邮件。</p>
 			</p>
         </div>
