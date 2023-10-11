@@ -4,7 +4,7 @@ const http = require('http');
 const Waline = require('@waline/vercel');
 const serverless = require('serverless-http');
 
-const postUrlSplit = "{{site.postUrl}}".split('#')[0];
+const postUrlSplit = site.postUrl.split('#')[0];
 
 const app = Waline({
   async postSave(comment) {
