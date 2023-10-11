@@ -18,7 +18,7 @@ const app = Waline({
     <div class="formmain" style="background:#fff;width:100%;max-width:800px;margin:auto auto;overflow:hidden;margin-bottom: -155px;">
         <p><strong>{{self.nick}}</strong> 回复说：</p>
         <div style="background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:15px;color:#555555;"><p>{{self.comment | safe}}</div>
-        <p style="text-align:center;position: relative;z-index: 99;">您可以点击<a id= "myLink" style="text-decoration:none;color:#cf5c83" href="{{site.postUrl}}"`.split('/#')[0]+`" target="_blank">查看回复的完整內容</a></p>
+        <p style="text-align:center;position: relative;z-index: 99;">您可以点击<a id= "myLink" style="text-decoration:none;color:#cf5c83" href="{{site.postUrl}}".split('/#')[0] target="_blank">查看回复的完整內容</a></p>
     </div>
 </div>`,
     mailSubject: '{{parent.nick}}，您在『{{site.name}}』上发表的评论收到了来自 {{self.nick}} 的回复',
